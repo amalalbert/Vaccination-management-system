@@ -107,15 +107,14 @@ void Vaccine::setData()//1
             if(strcmp(pf,mobileNumber)==0)
             {
                 cout<<"\n\t\t Number found in records ,enter another mobile number\n";
-                getch();
-                mob.close();
                 goto label2;
             }
-            mob.close();
             }
-            mob.close();
-        }
-        }
+            
+        }        
+        strcpy(mobileNumber, pf);
+        mob.close();
+	}
         cout<<"\n\t\t Enter your name :-  ";
         gets(name);
         fflush(stdin);
